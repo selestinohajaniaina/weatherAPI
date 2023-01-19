@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  background: #f8f8f8;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  position: fixed;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0051ff;
+  color: aliceblue;
+  padding: 15px;
+}
+header .menu {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+header .menu a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+header .menu a:nth-child(2) {
+  border: #fff solid 1px;
+  width: fit-content;
+}
+section .images {
+  display: flex;
+  margin: 80px 0 0 0;
+  transition: all 1s ease;
+}
+section .images img:hover {
+  transform: scale(1.1) rotateZ(2deg);
+  transition: all 1s ease;
+}
+footer {
+  border: #43434351 solid 1px;
+  border-radius: 3px;
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h3 {
+  color: #333333c1;
+}
+footer form {
+  background: #0051ff68;
+  padding: 10px;
+  border-radius: 4px;
+}
+footer select {
+  text-align: center;
+  outline: none;
+  margin: 10px;
+  padding: 5px;
+  width: 170px;
+  border-radius: 50px;
+}
+footer input {
+  outline: none;
+  padding: 5px;
+  margin: 10px;
+  width: 100px;
+  border: none;
+  color: aliceblue;
+  background: #0051ffda;
+  border-radius: 50px;
+}
+footer input:hover {
+  opacity: 0.8;
+}
