@@ -1,5 +1,5 @@
 {
-  "name": "express",
+  "name": "weather",
   "version": "1.0.0",
   "description": "application eveloped by expressjs",
   "main": "index.js",
