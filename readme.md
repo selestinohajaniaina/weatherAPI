@@ -4,4 +4,4 @@
 
 link: [https://weather-mg.netlify.app](https://weather-mg.netlify.app)
 
-#### thanks to give your aprouvements.
+#### thanks to give your improuvements.
