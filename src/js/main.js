@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
 
 // declared the URL & Key & query
 
-let url = "http://api.openweathermap.org/data/2.5/forecast?",
+let url = "https://api.openweathermap.org/data/2.5/forecast?",
   access_key = "dd6558c2ba19bde6b4dd0b2c95e5509f",
   ville_default = "Mahajanga";
 
