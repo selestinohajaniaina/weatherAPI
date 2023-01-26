@@ -40,8 +40,25 @@ async function clickBtn(vll) {
 
   console.log(myData);
   aff(countryAPI, nameAPI, dateAPI, latAPI, lonAPI, tempAPI, mainAPI);
+  addBodyBack(nameAPI);
+  
+  switch (mainAPI) {
+    case "Rain":
+      addFooterGif(mainAPI);
+      break;
+      case "Clouds":
+      addFooterGif(mainAPI);
+      break;
+
+    default:
+      document.getElementById("footer").style.background = "transparent";
+      break;
+  }
 }
-setTimeout(clickBtn(ville_default), 3000);
+setTimeout(() => {
+  clickBtn(ville_default);
+  addBodyBack(ville_default);
+}, 3000);
 
 //function pour affiche au page les données
 
@@ -61,4 +78,30 @@ async function aff(
   longitude.innerHTML = await e;
   temp.innerHTML = await f;
   desc.innerHTML = await g;
+}
+
+function addBodyBack(nameImg) {
+  document.body.style.backgroundImage = `url('src/image/array/${nameImg}.jpg')`;
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundAttachment = "fixed";
+  document.body.style.backgroundSize = "cover";
+}
+
+function addFooterGif(nameImg) {
+  document.getElementById(
+    "footer"
+  ).style.backgroundImage = `url('src/image/${nameImg}.gif`;
+  document.getElementById(
+    "footer"
+  ).style.backgroundRepeat = "no-repeat";
+  document.getElementById(
+    "footer"
+  ).style.backgroundPosition = "center";
+  document.getElementById(
+    "footer"
+  ).style.backgroundAttachment = "fixed";
+  document.getElementById(
+    "footer"
+  ).style.backgroundSize = "cover";
 }

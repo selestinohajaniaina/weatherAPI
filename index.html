@@ -26,9 +26,9 @@
         <img src="src/image/6.jpg" />
       </div>
     </section>
-    <footer>
-      <h3>Find your real Weather</h3>
-      <br />
+    <footer id="footer">
+      <div class="footer">
+        <h2>Metéo</h2>
       <form>
         <select name="select" id="select">
           <option value="Mahajanga">Mahajanga</option>
@@ -41,18 +41,16 @@
         </select>
         <input type="button" value="voir" id="btn" />
       </form>
-      <h2>Metéo</h2>
       <br />
-      <div class="des">
-        <p>Pays: <span id="pays"></span></p>
-        <p>Ville: <span id="Ville"></span></p>
-        <p>Altitude: <span id="altitude"></span></p>
-        <p>Longitude: <span id="longitude"></span></p>
-        <p>Temperature: <span id="temp"></span> ℃ </p>
-        <p>Date and Hour: <span id="dt"></span></p>
-        <p>Description: <span id="desc"></span></p>
-        <br />
-        <br />
+      <div class="Meteo">
+        <p class="temp"><span id="temp"></span> ℃ </p>
+        <p class="ville"><span id="Ville"></span></p>
+        <p class="pays"><span id="pays"></span></p>
+        <p class="des"><span id="desc"></span></p>
+        <p class="alt">Alt: <span id="altitude"></span></p>
+        <p class="lon">Lon: <span id="longitude"></span></p>
+        <p class="date"><span id="dt"></span></p>
+      </div>
       </div>
     </footer>
   </body>

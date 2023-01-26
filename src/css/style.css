@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 body {
-  background: #f8f8f8;
+  background: rgba(215, 219, 228, 0.221);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header {
@@ -33,32 +33,38 @@ header .menu a:nth-child(2) {
 }
 section .images {
   display: flex;
-  margin: 80px 0 0 0;
+  margin: 100px 0 0 0;
   transition: all 1s ease;
 }
 section .images img:hover {
   transform: scale(1.1) rotateZ(2deg);
   transition: all 1s ease;
 }
-footer {
+footer{
+  display: grid;
+  place-content: center;
+}
+.footer {
+  position: relative;
   border: #43434351 solid 1px;
   border-radius: 5px;
-  width: 50%;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  width: fit-content;
+  height: 420px;
+  padding: 0;
+  background: #ffffff2c;
+  color: azure;
 }
-footer h3 {
-  color: #333333c1;
-}
-footer form {
+.footer form {
+  margin: 0;
   background: #0051ff68;
   padding: 10px;
   border-radius: 4px;
 }
-footer select {
+h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.footer select {
   text-align: center;
   outline: none;
   margin: 10px;
@@ -66,7 +72,7 @@ footer select {
   width: 170px;
   border-radius: 50px;
 }
-footer input {
+.footer input {
   outline: none;
   padding: 5px;
   margin: 10px;
@@ -76,6 +82,53 @@ footer input {
   background: #0051ffda;
   border-radius: 50px;
 }
-footer input:hover {
+.footer input:hover {
   opacity: 0.8;
+}
+.Meteo{
+  height: 100%;
+}
+.Meteo p {
+  margin: 2px;
+  width: fit-content;
+}
+.ville {
+  color: rgb(255, 172, 30);
+  font-size: 25pt;
+}
+.pays {
+  font-size: 11pt;
+  color: rgba(255, 255, 255, 0.754);
+}
+.temp {
+  float: right;
+  font-size: 8pt;
+  color: #ffffff;
+  padding: 60px 0 0 0;
+}
+.temp #temp {
+  font-size: 70pt;
+}
+.date{
+  position: absolute;
+  font-size: 10pt;
+  right: 0;
+  bottom: 0;
+}
+.alt{
+  position: absolute;
+  font-size: 8pt;
+  left: 0;
+  bottom: 11px;
+}
+.lon{
+  position: absolute;
+  font-size: 8pt;
+  left: 0;
+  bottom: 0;
+}
+.des{
+  color: rgba(127, 255, 212, 0.686);
+  font-size: 35pt;
+  padding: 50px 0 0 20px;
 }
