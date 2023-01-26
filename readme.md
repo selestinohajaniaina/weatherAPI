@@ -2,6 +2,6 @@
 
 - creat by Javascript
 
-link: [https://weather-mg.netlify.app](https://weather-mg.netlify.app)
+link: [https://weather-mada.netlify.app](https://weather-mada.netlify.app)
 
 #### thanks to give your improuvements.
